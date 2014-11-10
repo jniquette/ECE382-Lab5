@@ -35,27 +35,6 @@ __interrupt void timerOverflow (void);
 #define		LOW_2_HIGH		P2IES &= ~BIT6
 
 
-
-
-//Define Remote Control Button Codes
-
-//REMOTE 076N0EA050
-//
-//
-//#define			minLogic0Pulse		366		//from confidence interval //averageLogic0Pulse - 100
-//#define			maxLogic0Pulse		806		//from confidence interval	//averageLogic0Pulse + 100
-//#define			minLogic1Pulse		366*3	//averageLogic1Pulse - 100
-//#define			maxLogic1Pulse		806*3	//averageLogic1Pulse + 100
-//#define			POWER		0xC03BD906
-//#define			ZERO		0xE03BC01F
-//#define			ONE			0xE03BD00F
-//#define			TWO			0xE03BC817
-
-
-
-
-
-////REMOTE NUMBER 10
 #define		averageLogic0Pulse	540		//0x0200
 #define		averageLogic1Pulse	540*3	//0x0645
 #define		averageStartPulse	4433	//hi only	//low and hi = 13336	//0x1100
@@ -63,17 +42,16 @@ __interrupt void timerOverflow (void);
 #define		maxLogic0Pulse		705		//from confidence interval	//averageLogic0Pulse + 100
 #define		minLogic1Pulse		375*3	//averageLogic1Pulse - 100
 #define		maxLogic1Pulse		705*3	//averageLogic1Pulse + 100
-#define		minStartPulse		averageStartPulse - 100
-#define		maxStartPulse		averageStartPulse + 100
-#define		POWER		0x59A6EA15
-#define		ZERO		0x59A60AF5
-#define		ONE			0x59A65AA5
-#define		TWO			0x59A67A85
-#define		THREE		0x59A6728D
+#define		minStartPulse		averageStartPulse - 500
+#define		maxStartPulse		averageStartPulse + 500
 
-#define		BIG_UP		0x59A6D827
-#define		BIG_DOWN	0x59A6C03F
-#define		BIG_LEFT	0x59A6609F
-#define		BIG_RIGHT	0x59A640BF
+#define		POWER		0x2CD3750A
+#define		ZERO		0x2CD3057A
+#define		ONE			0x2CD32D52
+#define		TWO			0x2CD33D42
+#define		THREE		0x2CD33946
 
-#define		BIG_MIDDLE	0xDEADBEEF
+#define		BIG_UP		0x2CD36C13
+#define		BIG_DOWN	0xACD3601F
+#define		BIG_LEFT	0xACD3304F
+#define		BIG_RIGHT	0xACD3205F
