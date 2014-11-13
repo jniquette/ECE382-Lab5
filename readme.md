@@ -25,7 +25,7 @@ The bits for a repeat button press are ommited because they are not used in this
 
 ###Measurements and Calculations
 Pulse                       |Duration (ms)  |Timer A counts |# of Half-Bit Widths   |Counts Per 1 Half-Bit
-----------------------------+---------------+---------------+-----------------------+---------------------
+----------------------------|---------------|---------------|-----------------------|---------------------
 Start logic 0 half-pulse    |9.0156         |8903           |18                     |495
 Start logic 1 half-pulse    |4.4844         |4433           |9                      |493
 Data 1 logic 0 half-pulse   |0.5875         |588            |1                      |588
@@ -44,7 +44,7 @@ Confidence Interval = average +/- (z* x StDev) = (375.1704227, 704.4945316)
 ###Button Codes
 Using the above data, the code was modified to convert pulse durations into data bits. The codes retrieved for Remote #10 
 Button      |Code
-------------+----------
+------------|----------
 POWER       |0x2CD3750A
 ZERO        |0x2CD3057A
 ONE         |0x2CD32D52
