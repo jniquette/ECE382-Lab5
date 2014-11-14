@@ -43,6 +43,7 @@ Confidence Interval = average +/- (z* x StDev) = (375.1704227, 704.4945316)
 
 ###Button Codes
 Using the above data, the code was modified to convert pulse durations into data bits. The codes retrieved for Remote #10 
+
 Button      |Code
 ------------|----------
 POWER       |0x2CD3750A
@@ -58,8 +59,11 @@ BIG_MIDDLE  |0xACD37807
 
 ##Code
 All code for this project can be found in the following three files:
+
 1. lab5.c - C code that contains the main method, initMSP430 subroutine, and the interrupt subroutines.
+
 2. lab5.h - Contains several constant definitions to improve readability of code.
+
 3. nokia.asm - Assembly code for functionality of the Nokia 1707 display.
 
 ##Functionality
